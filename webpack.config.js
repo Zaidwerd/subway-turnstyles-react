@@ -30,7 +30,8 @@ const config = {
     new HtmlWebpackPlugin({
       title:      'Subway Commute',
       xhtml:      true,
-      inject:     false,
+      inject:     true,
+      scripts: ['https://maps.googleapis.com/maps/api/js?libraries=visualization&key=AIzaSyDLO9BWFDxOz2rzAjvkDwel7aRz025PcgY'],
       template:   htmlTemplate,
       appMountId: 'container',
     }),
