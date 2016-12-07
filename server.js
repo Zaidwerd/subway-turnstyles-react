@@ -32,5 +32,5 @@ app.use((err, req, res, next) => {
 app.use(express.static(path.join(__dirname, 'dist')));
 
 // start server
-app.listen(PORT);
+app.listen(PORT, () => { console.log('🚇'); });
 
