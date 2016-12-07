@@ -6,7 +6,9 @@ export default class App extends React.Component{
     return (
       <container>
         <h1> Subways and turnstyles! </h1>
-        <MapContainer />
+        <div id="map-container" style={{ width: '300px', height: '300px' }}>
+          <MapContainer />
+        </div>
       </container>
     );
   }

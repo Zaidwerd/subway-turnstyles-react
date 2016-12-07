@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import { GoogleMapLoader, GoogleMap, Marker } from 'react-google-maps';
+import { GoogleMapLoader, GoogleMap } from 'react-google-maps';
 
 class MapContainer extends Component {
 
   render() {
-    const MapContainer = <div style{{ height: '100%', width: '100%' }} />;
+    const mapContainer = <div style={{ height: '100%', width: '100%' }} />;
 
     const center = {
       lat: 40.7128,
@@ -19,8 +19,7 @@ class MapContainer extends Component {
             defaultZoom={13}
             defaultCenter={center}
             options={{ streetViewControl: false }}
-          >
-          </GoogleMap>
+          />
         }
       />
     );
